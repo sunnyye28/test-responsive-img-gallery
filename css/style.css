@@ -1,0 +1,135 @@
+/*Color Palette
+=============*/
+/*Global Styles
+=============*/
+body {
+  font-family: helvetica; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+header {
+  background-color: #38221F;
+  color: #8C6D69;
+  padding: 0.3%;
+  overflow: hidden; }
+
+#logo, .tagline {
+  margin-left: 3%;
+  margin-bottom: 0; }
+
+.tagline {
+  font-weight: normal; }
+
+.tagline, #main-navbar, #main-navbar li, #main-navbar a {
+  display: inline-block; }
+
+/*keeping these all on the same line, but with block properties*/
+#main-navbar {
+  float: right;
+  margin-top: 5px; }
+
+#main-navbar li {
+  margin-right: 10px;
+  background-color: #230B07;
+  font-size: 1.2em;
+  Border-radius: 5px; }
+  #main-navbar li a {
+    padding: 5px; }
+  #main-navbar li a:hover {
+    color: white; }
+
+#container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2% 5%;
+  overflow: hidden; }
+
+#gallery {
+  padding: 0;
+  margin: 0; }
+  #gallery a, #gallery img {
+    max-width: 100%; }
+
+footer {
+  background-color: #38221F;
+  color: #8C6D69;
+  padding: 1%; }
+  footer p {
+    margin: 0;
+    margin-left: 3%; }
+
+/*MOBILE STYLES
+=============*/
+/*Want the viewport to show only 1 image on each row*/
+/*break-point at 600px*/
+@media (max-width: 600px) {
+  .tagline, #main-navbar, #main-navbar li, #main-navbar li a {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%; }
+
+  #main-navbar ul {
+    padding: 0 20px; }
+
+  #main-navbar li {
+    width: 100%;
+    text-align: center; }
+
+  #gallery li {
+    text-align: center;
+    margin-bottom: 10px; } }
+/*TABLET STYLES
+=============*/
+/*Want the viewport to show 2 images on each row*/
+/*break-point at 770px*/
+@media (min-width: 601px) and (max-width: 770px) {
+  .tagline, #main-navbar, #main-navbar li, #main-navbar li a {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%; }
+
+  #main-navbar ul {
+    padding: 0 20px; }
+
+  #main-navbar li {
+    width: 100%;
+    text-align: center; }
+
+  #gallery li {
+    float: left;
+    width: 45%;
+    margin-right: 2%;
+    margin-bottom: 1%; } }
+/*NETBOOKS AND SMALL NOTEBOOKS
+=============*/
+/*Want the viewport to show 4 images on each row*/
+/*break-point at 1000px*/
+@media (min-width: 771px) and (max-width: 1200px) {
+  #gallery li {
+    float: left;
+    width: 23%;
+    margin-right: 1%;
+    margin-bottom: 0.5%; } }
+/*LARGE NOTEBOOK AND DESKTOP STYLES
+=============*/
+/*Want the viewport to show 5 images on each row*/
+/*any viewport over 1201px*/
+@media (min-width: 1201px) {
+  #gallery li {
+    float: left;
+    width: 18%;
+    margin-right: 1%;
+    margin-bottom: 0.5%; }
+
+  #container {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 2% 5%;
+    overflow: hidden; } }
+
+/*# sourceMappingURL=style.css.map */
